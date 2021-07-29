@@ -1,0 +1,15 @@
+all_joints:
+- [0]
+- [1]
+- [2]
+- [3]
+- [4]
+all_joints_names: [nose, rightear, leftear, TailBase, TailTip]
+dataset: training-datasets/iteration-1/UnaugmentedDataSet_Ayano_testJul27/Ayano_test_AyanoMatsushima95shuffle3.mat
+global_scale: 0.8
+init_weights: /usr/local/lib/python3.7/dist-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/mobilenet_v2_1.0_224.ckpt
+location_refinement: true
+locref_stdev: 7.2801
+net_type: mobilenet_v2_1.0
+num_joints: 5
+scoremap_dir: test
