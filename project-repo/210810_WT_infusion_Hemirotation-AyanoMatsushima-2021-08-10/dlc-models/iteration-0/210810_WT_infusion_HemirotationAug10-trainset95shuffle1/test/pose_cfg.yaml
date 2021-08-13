@@ -1,0 +1,21 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+all_joints_names:
+- nose
+- rightear
+- leftear
+- TailBase
+- TailTip
+dataset: training-datasets/iteration-0/UnaugmentedDataSet_210810_WT_infusion_HemirotationAug10/210810_WT_infusion_Hemirotation_Ayano
+  Matsushima95shuffle1.mat
+global_scale: 0.8
+init_weights: /opt/anaconda3/envs/DEEPLABCUT/lib/python3.8/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_101.ckpt
+location_refinement: true
+locref_stdev: 7.2801
+net_type: resnet_101
+num_joints: 5
+scoremap_dir: test

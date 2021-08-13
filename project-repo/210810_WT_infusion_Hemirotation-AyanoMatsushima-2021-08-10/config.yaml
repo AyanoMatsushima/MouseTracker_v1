@@ -1,23 +1,23 @@
     # Project definitions (do not edit)
-Task: Ayano_test
-scorer: AyanoMatsushima
-date: Jul27
+Task: 210810_WT_infusion_Hemirotation
+scorer: Ayano Matsushima
+date: Aug10
 multianimalproject: false
 identity:
 
     # Project path (change when moving around)
-project_path: /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo
+project_path: /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/210810_WT_infusion_Hemirotation-Ayano
+  Matsushima-2021-08-10
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
-  /Users/ayano/DeepLabCut/Ayano_video/Flamingo/Train/Bird_80024.mp4:
-    crop: 0, 2560, 0, 1440
-  /Users/ayano/DeepLabCut/Ayano_video/Flamingo/Train/Flamingo_49459.mp4:
-    crop: 0, 3840, 0, 2160
-  /Users/ayano/DeepLabCut/Ayano_video/Flamingo/Train/Flamingo_79749.mp4:
-    crop: 0, 3840, 0, 2160
-  /Users/ayano/DeepLabCut/Ayano_video/Flamingo/Train/Zoo_44792.mp4:
-    crop: 0, 1920, 0, 1080
+  ? /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/original_video/210810_Day1_PBS/Day1_PBS_7027_Movie
+    on 8-10-21 at 10.16 AM_default.mp4
+  : crop: 0, 1136, 0, 760
+  ? /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/original_video/210810_Day1_PBS/Day1_PBS_7028_WIN_20210810_10_44_22_Pro_default.mp4
+  : crop: 0, 800, 0, 600
+  ? /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/original_video/210810_Day1_PBS/e268e489-f56e-4535-84a9-ad80011fc842-7470c48e-1bfe-4ff8-8422-ad80015152d6.mp4
+  : crop: 0, 856, 0, 482
 bodyparts:
 - nose
 - rightear
@@ -30,13 +30,14 @@ numframes2pick: 20
 
     # Plotting configuration
 skeleton:
-- - bodypart1
-  - bodypart2
-- - objectA
-  - bodypart3
+- nose
+- rightear
+- leftear
+- TailBase
+- TailTip
 skeleton_color: black
-pcutoff: 0.5
-dotsize: 13
+pcutoff: 0.6
+dotsize: 6
 alphavalue: 0.7
 colormap: rainbow
 
@@ -62,4 +63,3 @@ corner2move2:
 - 50
 - 50
 move2corner: true
-croppedtraining: false
