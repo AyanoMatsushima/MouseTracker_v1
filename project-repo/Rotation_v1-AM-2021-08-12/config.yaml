@@ -1,31 +1,34 @@
     # Project definitions (do not edit)
-Task: 210810_WT_infusion_Hemirotation
-scorer: Ayano Matsushima
-date: Aug10
+Task: Rotation_v1
+scorer: AM
+date: Aug12
 multianimalproject: false
 identity:
 
     # Project path (change when moving around)
-project_path: /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/210810_WT_infusion_Hemirotation-AyanoMatsushima-2021-08-10
+project_path: /content/drive/MyDrive/DeepLabCut_Sync/project-repo/Rotation_v1-AM-2021-08-12
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
-  /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/210810_WT_infusion_Hemirotation-AyanoMatsushima-2021-08-10/videos/
-  : crop: 0, 1136, 0, 760
-  /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/210810_WT_infusion_Hemirotation-AyanoMatsushima-2021-08-10/videos/Day1_PBS_7028_WIN_20210810_10_44_22_Pro_default.mp4
-  : crop: 0, 800, 0, 600
-  /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/210810_WT_infusion_Hemirotation-AyanoMatsushima-2021-08-10/videos/
-  : crop: 0, 856, 0, 482
-  /Users/ayano/Downloads/Day2_LY_7026_7029_12_56_12_120812_default_52144454.mp4:
+  /Users/ayano/Rotation_v1-AM-2021-08-12/videos/Day1_PBS_7026_7029_1_27_40_210810_default_eab4bbaf.mp4:
+    crop: 0, 856, 0, 482
+  /Users/ayano/Rotation_v1-AM-2021-08-12/videos/Day1_PBS_7027_10_16_00_210810_default_25d2994e.mp4:
+    crop: 0, 1136, 0, 760
+  /Users/ayano/Rotation_v1-AM-2021-08-12/videos/Day1_PBS_7028_10_44_22_210810_default_def0d9c8.mp4:
+    crop: 0, 800, 0, 600
+  /Users/ayano/Rotation_v1-AM-2021-08-12/videos/Day2_LY_7026_7029_12_56_12_120812_default_52144454.mp4:
     crop: 0, 1280, 0, 720
-  /Users/ayano/Downloads/Day2_SKF_7027_7028_9_37_05_120812_default_559587c9.mp4:
+  /Users/ayano/Rotation_v1-AM-2021-08-12/videos/Day2_SKF_7027_7028_9_37_05_120812_default_559587c9.mp4:
     crop: 0, 1280, 0, 720
 bodyparts:
 - nose
 - rightear
 - leftear
-- TailBase
-- TailTip
+- righteye
+- lefteye
+- canula
+- tailstem
+- tailtip
 start: 0
 stop: 1
 numframes2pick: 20
@@ -33,10 +36,11 @@ numframes2pick: 20
     # Plotting configuration
 skeleton:
 - nose
-- rightear
-- leftear
-- TailBase
-- TailTip
+- righteye
+- lefteye
+- canula
+- tailstem
+- tailtip
 skeleton_color: black
 pcutoff: 0.5
 dotsize: 6
@@ -47,7 +51,7 @@ colormap: rainbow
 TrainingFraction:
 - 0.95
 iteration: 0
-default_net_type: resnet_50
+default_net_type: resnet_101
 default_augmenter: default
 snapshotindex: -1
 batch_size: 8

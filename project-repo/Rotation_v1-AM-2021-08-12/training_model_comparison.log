@@ -1,0 +1,2 @@
+2021-08-13 04:32:13,035 INFO Shuffle index:0, net_type:resnet_101, augmenter_type:imgaug, trainsetindex:0
+2021-08-13 04:32:15,258 INFO Shuffle index:1, net_type:mobilenet_v2_1.0, augmenter_type:imgaug, trainsetindex:0

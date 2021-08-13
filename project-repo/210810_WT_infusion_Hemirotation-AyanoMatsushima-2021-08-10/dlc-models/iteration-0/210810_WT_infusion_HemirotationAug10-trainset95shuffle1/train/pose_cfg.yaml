@@ -1,3 +1,47 @@
+    # Project definitions (do not edit)
+Task:
+scorer:
+date:
+multianimalproject:
+identity:
+
+    # Project path (change when moving around)
+project_path: /content/drive/MyDrive/DeepLabCut_Sync/project-repo/210810_WT_infusion_Hemirotation-AyanoMatsushima-2021-08-10/dlc-models/iteration-0/210810_WT_infusion_HemirotationAug10-trainset95shuffle1/train
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+bodyparts:
+start:
+stop:
+numframes2pick:
+
+    # Plotting configuration
+skeleton: []
+skeleton_color: black
+pcutoff:
+dotsize:
+alphavalue:
+colormap:
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+iteration:
+default_net_type:
+default_augmenter:
+snapshotindex:
+batch_size: 1
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping:
+    #if cropping is true for analysis, then set the values here:
+x1:
+x2:
+y1:
+y2:
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+move2corner:
 all_joints:
 - - 0
 - - 1
@@ -12,7 +56,6 @@ all_joints_names:
 - TailTip
 alpha_r: 0.02
 apply_prob: 0.5
-batch_size: 1
 clahe: true
 claheratio: 0.1
 crop_sampling: hybrid
@@ -67,8 +110,6 @@ pairwise_predict: false
 partaffinityfield_predict: false
 pos_dist_thresh: 17
 pre_resize: []
-project_path: /Users/ayano/Google Drive/DeepLabCut_Sync/project-repo/210810_WT_infusion_Hemirotation-Ayano
-  Matsushima-2021-08-10
 rotation: 25
 rotratio: 0.4
 save_iters: 50000
