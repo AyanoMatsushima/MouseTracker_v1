@@ -1,0 +1,2 @@
+model_checkpoint_path: "/content/drive/MyDrive/DeepLabCut_Sync/project-repo/Rotation_v1-AM-2021-08-12/dlc-models/iteration-0/Rotation_v1Aug12-trainset95shuffle1/train/snapshot-2000"
+all_model_checkpoint_paths: "/content/drive/MyDrive/DeepLabCut_Sync/project-repo/Rotation_v1-AM-2021-08-12/dlc-models/iteration-0/Rotation_v1Aug12-trainset95shuffle1/train/snapshot-2000"
